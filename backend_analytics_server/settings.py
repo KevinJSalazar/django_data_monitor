@@ -26,7 +26,9 @@ SECRET_KEY = "django-insecure-(32(!8uza*s#9y#t-5uprxl8y37d8blt$yl$s+&(prk5$78cd6
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
+
+CSRF_TRUSTED_ORIGINS = ["http://127.0.0.1:8000"]
 
 
 # Application definition
@@ -127,4 +129,4 @@ STATICFILES_DIRS = [
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-API_URL = 'https://jsonplaceholder.typicode.com/posts'
+API_URL = 'https://levin514.pythonanywhere.com/landing/api/index/'
