@@ -29,6 +29,12 @@ DEBUG = True
 ALLOWED_HOSTS = ['*']
 CSRF_TRUSTED_ORIGINS = ["http://127.0.0.1:8000"]
 
+# Fallo: acceso sin autenticación
+LOGIN_URL = '/login/'
+
+# Éxito: luego de autenticación exitosa
+LOGIN_REDIRECT_URL = '/'
+
 # Application definition
 
 INSTALLED_APPS = [
