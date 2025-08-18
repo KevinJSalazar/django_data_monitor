@@ -5,8 +5,10 @@ from django.http import HttpResponse
 from django.conf import settings
 import requests
 
-from django.contrib.auth.decorators import login_required
+from django.contrib.auth.decorators import login_required, permission_required
+
 @login_required
+@permission_required('dashboard.index_viewer', raise_exception=True)
 def dashboard(request):
     response = requests.get(settings.API_URL)  # URL de la API
     posts = response.json()  # Convertir la respuesta a JSON
