@@ -146,4 +146,4 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-API_URL = 'https://levin514.pythonanywhere.com/landing/api/index/'
+API_URL = 'https://levin514.pythonanywhere.com/landing/api/index/?format=json'
